@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/flash_lamp"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        android:drawableRight="@drawable/flashico"
+        android:onClick="onClickFlashlamp"
+        android:text="@string/flash_lamp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/compass"
+        android:layout_width="180dp"
+        android:layout_height="135dp"
+        android:layout_alignLeft="@+id/flash_lamp"
+        android:layout_below="@+id/flash_lamp"
+        android:drawableRight="@drawable/compass"
+        android:onClick="onClickCompass"
+        android:text="@string/compass"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/cycleruler"
+        android:layout_width="180dp"
+        android:layout_height="135dp"
+        android:layout_alignLeft="@+id/compass"
+        android:layout_below="@+id/compass"
+        android:drawableRight="@drawable/cycleruler"
+        android:onClick="onClickCycleRuleActivity"
+        android:text="量角器"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/Rule"
+        android:layout_width="180dp"
+        android:layout_height="135dp"
+        android:layout_alignLeft="@+id/cycleruler"
+        android:layout_below="@+id/cycleruler"
+        android:onClick="onClickRuleActivity"
+        android:drawableRight="@drawable/rule"
+        android:text="直尺"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/watch"
+        android:layout_width="180dp"
+        android:layout_height="101dp"
+        android:layout_toRightOf="@+id/compass"
+        android:layout_alignTop="@+id/compass"
+        android:drawableLeft="@drawable/watch"
+        android:onClick="onClickWatchActivity"
+        android:text="计时器"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="22sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/Level"
+        android:layout_width="180dp"
+        android:layout_height="101dp"
+        android:layout_alignLeft="@+id/watch"
+        android:layout_below="@+id/watch"
+        android:drawableLeft="@drawable/level"
+        android:onClick="onClickLevel"
+        android:text="水平仪"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/GPS"
+        android:layout_width="180dp"
+        android:layout_height="101dp"
+        android:layout_alignLeft="@+id/Level"
+        android:layout_below="@+id/Level"
+        android:drawableLeft="@drawable/gps"
+        android:onClick="onClickGPS"
+        android:text="GPS"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/develop"
+        android:layout_width="180dp"
+        android:layout_height="102dp"
+        android:layout_alignLeft="@+id/GPS"
+        android:layout_below="@+id/GPS"
+        android:drawableLeft="@drawable/people"
+        android:onClick="onClickMember"
+        android:text="小组成员"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
